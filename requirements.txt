@@ -1,0 +1,8 @@
+requests[security] == 2.9.1
+websockets
+aiohttp
+boto3
+numpy
+schedule
+websocket-client
+apscheduler

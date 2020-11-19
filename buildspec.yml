@@ -1,0 +1,24 @@
+version: 0.2
+
+env:
+  variables:
+    IMAGE: "levitrade.v2.scanner"
+    REPOSITORY: "levitrade/levitrade.v2.scanner"
+
+phases:
+  install:
+    commands:
+      - echo install step...
+  pre_build:
+    commands:
+      - echo pre_build step...
+  build:
+    commands:
+      - echo Building the Docker image...   
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - Dockerrun.aws.json
